@@ -12,6 +12,7 @@
         <module>boot-dubbo-api</module>
         <module>boot-dubbo-provider</module>
         <module>boot-dubbo-consumer</module>
+        <module>boot-dubbo-common</module>
     </modules>
 
     <!-- 在这里设置打包类型为pom，作用是为了实现多模块项目 -->
