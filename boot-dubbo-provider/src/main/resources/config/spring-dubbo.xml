@@ -9,7 +9,7 @@
 
     <dubbo:application name="provider"/>
     <!-- 注册中心的ip地址 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="multicast://224.5.6.7:1234"/>
     <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
     <dubbo:annotation package="com.boot.service.impl"/>
 </beans>
