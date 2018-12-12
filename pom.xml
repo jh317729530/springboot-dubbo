@@ -33,6 +33,7 @@
         <zkclient.version>0.10</zkclient.version>
         <lombok.version>1.16.18</lombok.version>
         <spring-boot.version>2.1.0.RELEASE</spring-boot.version>
+        <druid.version>1.1.9</druid.version>
     </properties>
 
     <!-- 声明一些项目依赖管理，方便我们的依赖版本管理 -->
@@ -93,6 +94,20 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>1.3.1</version>
             </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.43</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.10</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 </project>
