@@ -1,1 +1,30 @@
-# 在这里编写springboot的配置信息
+spring:
+  application:
+    name: provider
+  datasource:
+    name: a
+    url: a
+    username: a
+    password: a
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+
+# 服务端口
+server:
+  port: 9090
+
+# 管理端口
+management:
+  port: 9091
+
+provider:
+  service:
+    version: 1.0.0
+
+dubbo:
+  application:
+    id: boot-dubbo-provider
+    name: boot-dubbo-provider
+  scan:
+    base-packages: com.boot.service.impl
+  registry: multicast://224.5.6.7:1234
